@@ -1,0 +1,9 @@
+<h3>Personajes</h3>
+<hr>
+<ul>
+  @for (personaje of personajes; track $index) {
+  <li>{{personaje.name}} - {{personaje.poder }}</li>
+  }@empty {
+  <span>No hay personajes para mostrar</span>
+  }
+</ul>

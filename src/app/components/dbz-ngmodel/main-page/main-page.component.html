@@ -1,0 +1,39 @@
+<h1>Dragon ball z</h1>
+<hr>
+<div class="row">
+  <div class="col">
+    <h3>Personajes</h3>
+    <hr>
+    <ul>
+      @for (personaje of personajes; track $index) {
+      <li>{{personaje.name}} - {{personaje.poder | number}}</li>
+      }@empty {
+      <span>No hay personajes para mostrar</span>
+      }
+    </ul>
+  </div>
+  <div class="col">
+    <h3>Agregar</h3>
+    <hr>
+    <form (ngSubmit)="add()">
+      <input type="text" placeholder="Nombre" [(ngModel)]="new.name" name="name">
+      <input type="text" placeholder="Poder" [(ngModel)]="new.poder" name="poder">
+      <button type="submit">Agregar </button>
+    </form>
+    <!-- <form (submit)="add($event)">
+      <input type="text" placeholder="Nombre">
+      <input type="text" placeholder="Poder">
+      <button type="submit">Agregar </button>
+    </form> -->
+  </div>
+</div>
+
+
+<!--
+  Las [].- Me permite obtener las porpiedades de la clase
+  MainPageComponent, y establecer una propiedad al objeto
+  Los paraentesis ().- emitir o escuchar eventos
+  (ngSubmit)="add()".- si usas esto reduce el al usar add($event)
+   [value]="new.name" (input)="cambiarName($event)" se sustituye por ngModel
+
+-->
