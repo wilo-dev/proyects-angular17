@@ -40,11 +40,11 @@ export class ContainerCardService {
     },
     {
       id: 5,
-      title: 'Por definir',
+      title: 'Paises app',
       contenido:
-        'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.',
+        'SPA, consumiendo la api https://restcountries.com/ q nos permite ver la ubicacion, poblacion, etc de los paises, Utilizamos: RouterLink, Rxjs - SwitchMap, DebounceTime, OnInit',
       imgPath: 'assets/images/card/prueba.webp',
-      pagePath: '#',
+      pagePath: '/pais-app',
     },
     {
       id: 6,

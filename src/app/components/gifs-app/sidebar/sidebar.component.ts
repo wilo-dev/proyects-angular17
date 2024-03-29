@@ -1,5 +1,5 @@
 import { Component, inject } from '@angular/core';
-import { GifsService } from '../../services/gifs.service';
+import { GifsService } from '../services/gifs.service';
 import { TitleCasePipe } from '@angular/common';
 import { RouterLink } from '@angular/router';
 

@@ -1,0 +1,21 @@
+<h2>{{titleCapital}}</h2>
+<hr>
+
+<div class="row">
+  <div class="col">
+    <app-pais-input (onEnter)="buscarCapital($event)" placeholder="Buscar por capital" />
+  </div>
+</div>
+
+<hr>
+@if (error) {
+<div class="alert alert-danger">
+  No se encontró nada con el término {{termino}}
+</div>
+}@else if (capital.length > 0){
+<div class="row">
+  <div class="col">
+    <app-pais-tabla [resultados]="capital" />
+  </div>
+</div>
+}

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { SidebarComponent } from '../shared/sidebar/sidebar.component';
+import { SidebarComponent } from '../sidebar/sidebar.component';
 import { GifsPageComponent } from '../shared/gifs/gifs-page/gifs-page.component';
 
 @Component({

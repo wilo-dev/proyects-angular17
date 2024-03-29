@@ -1,7 +1,6 @@
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { Injectable, inject } from '@angular/core';
 import { Gifs, SearchGifsResponse } from '../interface/gifs.interface';
-import { JsonPipe } from '@angular/common';
 
 @Injectable({
   providedIn: 'root',

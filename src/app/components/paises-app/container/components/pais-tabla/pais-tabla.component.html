@@ -1,0 +1,28 @@
+<table class="table table-hover ">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>bandera</th>
+      <th>Nombre</th>
+      <th>Poblacion</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    @for (pais of resultados; track $index) {
+    <tr>
+      <td>{{$index + 1}}</td>
+      <td>
+        <!-- <img [ngSrc]="pais.flags.svg" width="50" height="30" priority [alt]="pais.name"> -->
+        <img class="small-flag" [src]="pais.flags.svg" [alt]="pais.name">
+      </td>
+      <td>{{pais.name.common}}</td>
+      <td>{{pais.population}}</td>
+      <td>
+        <a [routerLink]="['/pais-app/pais', pais.cca2]">Ver más...</a>
+      </td>
+    </tr>
+    }
+
+  </tbody>
+</table>
