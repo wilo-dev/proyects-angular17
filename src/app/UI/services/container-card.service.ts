@@ -42,17 +42,16 @@ export class ContainerCardService {
       id: 5,
       title: 'Paises app',
       contenido:
-        'SPA, consumiendo la api https://restcountries.com/ q nos permite ver la ubicacion, poblacion, etc de los paises, Utilizamos: RouterLink, Rxjs - SwitchMap, DebounceTime, OnInit, switchMap, tap',
-      imgPath: 'assets/images/card/prueba.webp',
+        'SPA, consumiendo la api https://restcountries.com/ q nos permite ver la ubicacion, poblacion, etc de los paises, Utilizamos: RouterLink, DebounceTime, OnInit, switchMap, tap, [class]',
+      imgPath: 'assets/images/card/pais.png',
       pagePath: '/pais-app',
     },
     {
       id: 6,
-      title: 'Por definir',
-      contenido:
-        'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.',
+      title: 'Custom pipe',
+      contenido: 'Creando pipes personalizados, usando: primeNg',
       imgPath: 'assets/images/card/prueba.webp',
-      pagePath: '#',
+      pagePath: '/custom-pipe',
     },
     {
       id: 7,

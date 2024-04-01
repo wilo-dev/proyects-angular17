@@ -9,6 +9,7 @@ import { PorRegionComponent } from './components/paises-app/container/pages/por-
 import { PorPaisComponent } from './components/paises-app/container/pages/por-pais/por-pais.component';
 import { PorCapitalComponent } from './components/paises-app/container/pages/por-capital/por-capital.component';
 import { VerPaisComponent } from './components/paises-app/container/pages/ver-pais/ver-pais.component';
+import { AppCustomPipeComponent } from './components/custom-pipe/container/app-custom-pipe/app-custom-pipe.component';
 
 export const routes: Routes = [
   {
@@ -66,6 +67,11 @@ export const routes: Routes = [
         redirectTo: '',
       },
     ],
+  },
+  {
+    path: 'custom-pipe',
+    component: AppCustomPipeComponent,
+    title: 'Custom pipe',
   },
   {
     path: '',
