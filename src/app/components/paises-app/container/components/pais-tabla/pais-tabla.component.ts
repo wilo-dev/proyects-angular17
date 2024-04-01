@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { Pais } from '../../../interface/pais.interface';
 import { RouterLink } from '@angular/router';
+import { CurrencyPipe, DecimalPipe } from '@angular/common';
 
 @Component({
   selector: 'app-pais-tabla',

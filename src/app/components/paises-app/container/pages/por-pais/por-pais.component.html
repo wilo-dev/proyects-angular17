@@ -7,6 +7,26 @@
   </div>
 </div>
 
+@if (mostrarSugerencia) {
+
+<ul class="list-group">
+  @for (pais of paisesSugeridos; track $index) {
+  <li class="list-group-item list-group-item-action list-group-item-light">
+    <a class="nav-link" [routerLink]="[ '/pais-app/pais', pais.cca2]">
+      {{pais.name.common}}
+    </a>
+  </li>
+  }
+
+  <li class="list-group-item list-group-item-action list-group-item-primary" (click)="onBuscarSugerido(termino)">
+    <a class="nav-link">
+      <strong>Buscar:</strong> "{{termino}}"
+    </a>
+  </li>
+</ul>
+
+}
+
 <hr>
 @if (error) {
 <div class="alert alert-danger">

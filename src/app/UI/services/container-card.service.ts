@@ -42,7 +42,7 @@ export class ContainerCardService {
       id: 5,
       title: 'Paises app',
       contenido:
-        'SPA, consumiendo la api https://restcountries.com/ q nos permite ver la ubicacion, poblacion, etc de los paises, Utilizamos: RouterLink, Rxjs - SwitchMap, DebounceTime, OnInit',
+        'SPA, consumiendo la api https://restcountries.com/ q nos permite ver la ubicacion, poblacion, etc de los paises, Utilizamos: RouterLink, Rxjs - SwitchMap, DebounceTime, OnInit, switchMap, tap',
       imgPath: 'assets/images/card/prueba.webp',
       pagePath: '/pais-app',
     },
