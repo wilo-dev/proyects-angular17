@@ -48,10 +48,10 @@ export class ContainerCardService {
     },
     {
       id: 6,
-      title: 'Custom pipe',
-      contenido: 'Creando pipes personalizados, usando: primeNg',
+      title: 'prueba',
+      contenido: 'proeba',
       imgPath: 'assets/images/card/prueba.webp',
-      pagePath: '/custom-pipe',
+      pagePath: '#',
     },
     {
       id: 7,
