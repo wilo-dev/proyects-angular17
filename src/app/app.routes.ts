@@ -40,32 +40,10 @@ export const routes: Routes = [
     path: 'pais-app',
     component: AppPaisComponent,
     title: 'Paise App',
-    children: [
-      {
-        path: '',
-        component: PorPaisComponent,
-        pathMatch: 'full',
-      },
-      {
-        path: 'region',
-        component: PorRegionComponent,
-        title: 'Región',
-      },
-      {
-        path: 'capital',
-        component: PorCapitalComponent,
-        title: 'Capital',
-      },
-      {
-        path: 'pais/:id',
-        component: VerPaisComponent,
-        title: 'Pais por codigo',
-      },
-      {
-        path: '**',
-        redirectTo: '',
-      },
-    ],
+    loadChildren: () =>
+      import('./components/paises-app/router/pais-app.routes').then(
+        (x) => x.PaisApp
+      ),
   },
   {
     path: 'gifsapp',
